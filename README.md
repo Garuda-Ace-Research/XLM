@@ -1,3 +1,27 @@
+# Modification
+
+To see the original readme, please go to the original repository that can be found here [https://github.com/facebookresearch/XLM](https://github.com/facebookresearch/XLM). The original readme can also be found below this section starting from the XLM Section. All Information of the Modification we do can be found in this section.
+
+## process-data.sh
+This file is used to process monolingual data and parallel data that you have into a form that can be used to train the XLM.
+
+Example usage:
+```sh
+process-data.sh --src id --tgt jv
+```
+id is the code for indonesia and jv is the code for javanese. <br>
+
+To use this, you need to create a folder called data with the following structure:
+![tree.png](https://ibb.co/xsq4NKB)<br>
+
+For folders in mono, there should only be one file that follows the pattern `all.{language_id}`, example: `all.jv` for the jv folder.<br>
+For folders in para, there should be six files that follows these patterns:
+- `[SRC]-[TGT].[SRC].[test/train/valid].untok`, ex: `id-jv.id.test.untok`
+- `[SRC]-[TGT].[TGT].[test/train/valid].untok`, ex: `id-jv.jv.test.untok`
+
+The folder named processed will be created by the script.
+
+
 # XLM
 
 **NEW:** Added [XLM-R](https://arxiv.org/abs/1911.02116) model.
