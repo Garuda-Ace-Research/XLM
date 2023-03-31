@@ -16,8 +16,8 @@ To use this, you need to create a folder called data with the following structur
 
 For folders in mono, there should only be one file that follows the pattern `all.{language_id}`, example: `all.jv` for the jv folder.<br>
 For folders in para, there should be six files that follows these patterns:
-- `[test/train/valid].[SRC]-[TGT].[SRC]`, ex: `test.id-jv.id`
-- `[test/train/valid].[SRC]-[TGT].[TGT]`, ex: `test.id-jv.jv`
+- `[SRC]-[TGT].[SRC].[train/test/valid].untok`, ex: `id-jv.id.test.untok`
+- `[SRC]-[TGT].[TGT].[train/test/valid].untok`, ex: `id-jv.id.test.untok`
 
 The folder named processed will be created by the script.
 
