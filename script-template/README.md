@@ -7,3 +7,9 @@ In each of the file, there are tokens that you must change before running the sc
 
 Note: 
 - SRC must be alphabetically ordered before TGT, so if you are training a pair of language with language id of `ba` and `jv`, that means SRC must be `ba` and TGT must be `jv`
+
+Script Explanation:
+- Files that has `fromscratch` in their name are scripts to train supervisedMT and unsupervisedMT without a pretrained model
+- Files that has `LM` in their name are scripts to train a Language Model, mlmTlm means the model is trained with both XLM objective
+- Files that has `unsupMT` in their name are scripts to train an unsupervisedMT model.
+- Files that has `supMT` in their name are scripts to train a supervisedMT model.
