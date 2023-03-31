@@ -3,7 +3,7 @@
 To see the original readme, please go to the original repository that can be found here [https://github.com/facebookresearch/XLM](https://github.com/facebookresearch/XLM). The original readme can also be found below this section starting from the XLM Section. All Information of the Modification we do can be found in this section.
 
 ## process-data.sh
-This file is used to process monolingual data and parallel data that you have into a form that can be used to train the XLM.
+This file is used to process monolingual data and parallel `data` that you have into a form that can be used to train the XLM.
 
 Example usage:
 ```sh
