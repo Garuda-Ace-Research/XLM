@@ -21,6 +21,10 @@ For folders in para, there should be six files that follows these patterns:
 
 The folder named processed will be created by the script.
 
+## script-template
+script-template is a folder where you can find templates script. Further explanation can be seen inside the folder. <br>
+Please note that the script should be put in this directory instead of another directory.
+
 
 # XLM
 
