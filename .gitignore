@@ -125,5 +125,7 @@ dmypy.json
 
 # tools, data, and dumped models
 # /tools
-/data
+/data/mono
+/data/para
+/data/processed
 /dumped
