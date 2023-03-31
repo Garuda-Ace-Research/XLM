@@ -9,3 +9,9 @@ For folders in para, there should be six files that follows these patterns:
 - `[test/train/valid].[SRC]-[TGT].[TGT]`, ex: `test.id-jv.jv`
 
 The folder named `processed` will be created by `process-data.sh`.
+
+
+# Our Data
+
+Our data can be found in this google drive folder.
+[TODO: Upload files to google drive, put link here]
