@@ -8,4 +8,4 @@ For folders in para, there should be six files that follows these patterns:
 - `[test/train/valid].[SRC]-[TGT].[SRC]`, ex: `test.id-jv.id`
 - `[test/train/valid].[SRC]-[TGT].[TGT]`, ex: `test.id-jv.jv`
 
-The folder named processed will be created by the script.
+The folder named `processed` will be created by `process-data.sh`.
