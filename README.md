@@ -11,7 +11,7 @@ process-data.sh --src id --tgt jv
 ```
 id is the code for indonesia and jv is the code for javanese. <br>
 
-To use this, you need to create a folder called data with the following structure:
+To use this, you need to create a folder called data with the following structure:<br>
 ![https://ibb.co/xsq4NKB](https://i.ibb.co/8BghHnf/tree.png)<br>
 
 For folders in mono, there should only be one file that follows the pattern `all.{language_id}`, example: `all.jv` for the jv folder.<br>
