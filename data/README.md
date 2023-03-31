@@ -1,6 +1,6 @@
-# data
+# Data Folder Structure
 
-This folder should have the following structure:
+This folder should have the following structure:<br>
 ![https://ibb.co/xsq4NKB](https://i.ibb.co/8BghHnf/tree.png)<br>
 
 For folders in mono, there should only be one file that follows the pattern `all.{language_id}`, example: `all.jv` for the jv folder.<br>
