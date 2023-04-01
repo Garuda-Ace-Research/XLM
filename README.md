@@ -25,6 +25,27 @@ The folder named processed will be created by the script.
 script-template is a folder where you can find templates script. Further explanation can be seen inside the folder. <br>
 Please note that the script should be put in this directory instead of another directory.
 
+## filter_pair-lang.sh and filter_multi-pair.sh
+We have found that filtering parallel sentences that are either too short, too long, or has too high of a ratio difference between the source sentence and the target sentence increases the performance of the trained model.
+
+The intuition behind our choice are that:
+- Sentences that are too short contain little to no context for the model to learn
+- Sentences that are too long often contain too much noise for the model to learn effectively
+- Sentences that has too high of a ratio differences tend to be too difficult to learn for the model
+
+We use the following hyperparameters to filter the sentences:
+- MIN_LENGTH = 3
+- MAX_LENGTH = 250
+- MAX_RATIO = 1.5
+
+You can change those hyperparameters setting on `filter_pair-lang.sh`. Example use of the script:<br>
+```filter_pair-lang.sh ./data/para/id-jv/id-jv.id.train.untok ./data/para/id-jv/id-jv.jv.train.untok```
+
+You can also use `filter_multi-pair.sh` to filter not only the training set, but also the validation and test set if you so wish to. We believe that most of the filtered sentences would be dirty sentence pair, so it might be useful as a preprocessing step. But, since we are using data from [FLORES200 dataset](https://github.com/facebookresearch/flores/tree/main/flores200), we do not use this script.
+
+Example use of the `filter_multi-pair.sh` script:<br>
+```filter_para.sh --src id --tgt jv --path ./data/para/id-jv```
+
 
 # XLM
 
