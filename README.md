@@ -39,12 +39,16 @@ We use the following hyperparameters to filter the sentences:
 - MAX_RATIO = 1.5
 
 You can change those hyperparameters setting on `filter_pair-lang.sh`. Example use of the script:<br>
-```filter_pair-lang.sh ./data/para/id-jv/id-jv.id.train.untok ./data/para/id-jv/id-jv.jv.train.untok```
+```sh
+filter_pair-lang.sh ./data/para/id-jv/id-jv.id.train.untok ./data/para/id-jv/id-jv.jv.train.untok
+```
 
 You can also use `filter_multi-pair.sh` to filter not only the training set, but also the validation and test set if you so wish to. We believe that most of the filtered sentences would be dirty sentence pair, so it might be useful as a preprocessing step. But, since we are using data from [FLORES200 dataset](https://github.com/facebookresearch/flores/tree/main/flores200), we do not use this script.
 
 Example use of the `filter_multi-pair.sh` script:<br>
-```filter_para.sh --src id --tgt jv --path ./data/para/id-jv```
+```sh
+filter_para.sh --src id --tgt jv --path ./data/para/id-jv
+```
 
 
 # XLM
