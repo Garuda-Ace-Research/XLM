@@ -135,3 +135,6 @@ dmypy.json
 
 # logs
 /logs
+
+# modified script
+/used-script
