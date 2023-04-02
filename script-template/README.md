@@ -1,5 +1,7 @@
 # script-template
 
+In this folder, there are template scripts that you can modify to help you train your model. Please remember that the modified script should be placed in the main folder (the `XLM` folder).
+
 In each of the file, there are tokens that you must change before running the script. The tokens are as following:<br>
 - [PROJECT_NAME], this token should be replaced with your project name if this script is ran in a cluster.
 - [CHANGE_ME], this token can be replaced with any string you want. This token should be replaced with an identifier for your script running.
