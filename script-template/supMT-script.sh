@@ -1,5 +1,5 @@
 #!/bin/bash -l
-#$ -P multilm
+#$ -P [PROJECT_NAME]
 #$ -l gpus=1
 #$ -l gpu_c=7.0
 #$ -N [CHANGE_ME]
