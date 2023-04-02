@@ -132,3 +132,6 @@ dmypy.json
 # error and output logs
 *.e*
 *.o*
+
+# logs
+/logs
