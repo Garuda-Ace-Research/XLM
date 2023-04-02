@@ -1,6 +1,7 @@
 # script-template
 
 In each of the file, there are tokens that you must change before running the script. The tokens are as following:<br>
+- [PROJECT_NAME], this token should be replaced with your project name if this script is ran in a cluster.
 - [CHANGE_ME], this token can be replaced with any string you want. This token should be replaced with an identifier for your script running.
 - [SRC], this token must be replaced with a language id such as `id` or `jv`, depending on what language pair are you training it for.
 - [TGT], this token must be replaced with a language id such as `id` or `jv`, depending on what language pair are you training it for.
