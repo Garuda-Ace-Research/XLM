@@ -7,9 +7,10 @@ This file is used to process monolingual data and parallel `data` that you have 
 
 Example usage:
 ```sh
-process-data.sh --src id --tgt jv
+qsub -pe omp 16 process-data.sh --src id --tgt jv
 ```
 id is the code for indonesia and jv is the code for javanese. <br>
+We require multiple core because our monolingual data for indonesia is too large to be handled on one core. You can omit the `-pe omp 16` argument to only use one core if your pair language are small enough.
 
 To use this, you need to create a folder called data with the following structure:<br>
 ![https://ibb.co/xsq4NKB](https://i.ibb.co/8BghHnf/tree.png)<br>
